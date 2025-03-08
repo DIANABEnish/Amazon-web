@@ -1,2 +1,2 @@
 # Amazon-web
-A website that simulates an Amazon shopping experience
+This website that simulates an Amazon shopping experience
