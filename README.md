@@ -1,5 +1,5 @@
 # Amazon-web
-This website that simulates an Amazon shopping experience
+This website simulates an Amazon shopping experience
 
 ## Overview
 This project is a functional simulation of the Amazon shopping experience, created as a front-end development exercise. The website replicates key features of Amazon's user interface and functionality, providing users with a familiar e-commerce experience.
