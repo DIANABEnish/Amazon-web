@@ -2,51 +2,36 @@
 <html>
   <head>
     <title>Amazon Project</title>
-
-    <!-- This code is needed for responsive design to work.
-      (Responsive design = make the website look good on
-      smaller screen sizes like a phone or a tablet). -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Load a font called Roboto from Google Fonts. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Here are the CSS files for this page. -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/shared/general.css" />
     <link rel="stylesheet" href="styles/shared/amazon-header.css" />
     <link rel="stylesheet" href="styles/pages/amazon.css" />
+    <link rel="stylesheet" href="styles/pages/amazon-hero.css" />
   </head>
   <body>
+
+    <!-- ── Fixed Header ── -->
     <div class="amazon-header">
       <div class="amazon-header-left-section">
         <a href="amazon.html" class="header-link">
           <img class="amazon-logo" src="images/amazon-logo-white.png" />
-          <img
-            class="amazon-mobile-logo"
-            src="images/amazon-mobile-logo-white.png"
-          />
+          <img class="amazon-mobile-logo" src="images/amazon-mobile-logo-white.png" />
         </a>
       </div>
-
       <div class="amazon-header-middle-section">
         <input class="search-bar js-search-bar" type="text" placeholder="Search">
-
         <button class="search-button js-search-button">
           <img class="search-icon" src="images/icons/search-icon.png" />
         </button>
       </div>
-
       <div class="amazon-header-right-section">
         <a class="orders-link header-link" href="orders.html">
           <span class="returns-text">Returns</span>
           <span class="orders-text">& Orders</span>
         </a>
-
         <a class="cart-link header-link" href="checkout.html">
           <img class="cart-icon" src="images/icons/cart-icon.png" />
           <div class="cart-quantity js-cart-quantity"></div>
@@ -55,9 +40,44 @@
       </div>
     </div>
 
-    <div class="main">
+    <!-- ── Hero Section ── -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-badge">🔥 Limited-Time Deals</div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Amazon Clone · Portfolio Project</p>
+        <h1 class="hero-headline">
+          Everything You Need,<br />
+          <span class="hero-highlight">Delivered Fast.</span>
+        </h1>
+        <p class="hero-subtext">
+          Millions of products. Unbeatable prices.<br />
+          Free shipping on eligible orders.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#products" class="hero-btn hero-btn-primary">Shop Now</a>
+          <a href="#products" class="hero-btn hero-btn-secondary">Today's Deals</a>
+        </div>
+        <div class="hero-trust">
+          <span class="trust-item">✓ Free Returns</span>
+          <span class="trust-item">✓ Secure Checkout</span>
+          <span class="trust-item">✓ 24/7 Support</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ── Products Grid ── -->
+    <div class="main" id="products">
       <div class="products-grid js-products-grid"></div>
     </div>
+
     <script type="module" src="/scripts/amazon.js"></script>
   </body>
 </html>
