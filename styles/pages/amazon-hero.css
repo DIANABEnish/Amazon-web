@@ -244,9 +244,8 @@
   }
 
   .hero-btn {
-    width: 100%;
-    max-width: 300px;
-    padding: 13px 24px;
+   width: 250px;
+    padding: 13px 15px;
     font-size: 15px;
   }
 
@@ -265,3 +264,4 @@
 }
 
 html { scroll-behavior: smooth; }
+
